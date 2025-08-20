@@ -1,0 +1,53 @@
+ .app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dockview-container {
+  flex: 1;
+  background-color: #1e1e1e;
+}
+
+.dockview-theme-dark {
+  --dv-group-view-background-color: #252526;
+  --dv-tabs-and-actions-container-background-color: #2d2d30;
+  --dv-tab-background-color: #2d2d30;
+  --dv-tab-active-background-color: #1e1e1e;
+  --dv-tab-color: #cccccc;
+  --dv-tab-active-color: #ffffff;
+  --dv-separator-border: #3e3e42;
+}
+
+
+
+/* Add to your CSS file */
+.dockview-theme-light .group-control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dockview-theme-light .action {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.dockview-theme-light .action:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 18px;
+}
+
+.dv-right-actions-container{
+    color:#fff
+}
